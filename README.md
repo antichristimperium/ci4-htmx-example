@@ -2,4 +2,12 @@
 
 For this example I share only the files where the use of htmx is applied.
 
-Enjoy. 
+## Table schema pgsql
+
+```postgre
+CREATE TABLE news
+(
+    id    serial primary key,
+    title VARCHAR(128) not null
+)
+```
