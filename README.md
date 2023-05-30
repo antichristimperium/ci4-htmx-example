@@ -11,3 +11,6 @@ CREATE TABLE news
     title VARCHAR(128) not null
 )
 ```
+
+## Sample
+![Alt text](https://github.com/antichristimperium/ci4-htmx-example/blob/main/sample.gif?raw=true "Title")
