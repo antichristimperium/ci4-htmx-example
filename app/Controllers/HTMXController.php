@@ -27,12 +27,12 @@ class HTMXController  extends BaseController
             'title' => $post['title'],
         ]);
 		
-		# htmx.on(trigger) in client side
+        # htmx.on(trigger) in client side
         $json = json_encode(
-			array("SaveRecord" => array(
-				"title" => "Registro almacenado",
-			)
-		));
+            array("SaveRecord" => array(
+                "title" => "Registro almacenado",
+            )
+        ));
 
         header("HX-Trigger: ".$json."");
     }
