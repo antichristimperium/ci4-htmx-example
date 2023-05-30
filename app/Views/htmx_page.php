@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTMX Project</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </head>
@@ -27,7 +27,7 @@
                 <form hx-post="/htmx/create" hx-target="this" hx-swap="none">
                     <div class="mb-3">
                         <label for="id_title" class="form-label">Título</label>
-                        <input type="text" name="title" class="form-control" id="id_title" required>
+                        <input type="text" name="title" class="form-control" id="id_title" required />
                     </div>
                     <button type="submit" class="btn btn-primary" id="btn_submit">Guardar</button>
                 </form>
@@ -37,7 +37,7 @@
         <div class="card col-sm-6 offset-md-3 mt-4">
             <div class="card-body">
                 <h5>Registros</h5>
-                <hr>
+                <hr />
                 <div id="rows" hx-get="/htmx/list" hx-target="this" hx-trigger="load" hx-swap="innerHTML"></div>
             </div>
         </div>
